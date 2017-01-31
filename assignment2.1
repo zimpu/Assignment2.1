@@ -1,0 +1,125 @@
+[acadgild@localhost ~]$ hadoop fs -ls
+17/01/26 04:47:53 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 16 items
+drwxr-xr-x   - acadgild supergroup          0 2015-11-20 11:46 Pictures
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 21:58 World
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 19:01 data1
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:58 data2
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 here
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:35 hetal.txt
+-rw-r--r--   1 acadgild supergroup         63 2017-01-25 22:00 hetal1.txt
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:03 oozie-acad
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:00 share
+-rw-r--r--   1 acadgild supergroup         54 2017-01-26 01:42 test
+-rw-r--r--   1 acadgild supergroup         56 2017-01-26 01:46 test1
+-rw-r--r--   1 acadgild supergroup         17 2017-01-26 01:44 test1.txt
+-rw-r--r--   1 acadgild supergroup         35 2017-01-26 01:46 test2
+-rw-r--r--   1 acadgild supergroup         46 2017-01-26 01:02 testText.txt
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 19:06 you
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 zimpu.txt
+[acadgild@localhost ~]$ hadoop fs -ls /
+17/01/26 04:48:12 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 14 items
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:44 /data1
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:44 /data2
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:13 /demo
+drwxr-xr-x   - acadgild supergroup          0 2017-01-26 04:21 /hbasestorage
+drwxr-xr-x   - acadgild supergroup          0 2017-01-26 00:53 /inp
+drwxr-xr-x   - acadgild supergroup          0 2017-01-26 01:37 /output
+-rw-r--r--   1 acadgild supergroup          0 2017-01-26 01:40 /test
+-rw-r--r--   1 acadgild supergroup          0 2017-01-26 01:44 /test1
+-rw-r--r--   1 acadgild supergroup          0 2017-01-26 01:43 /test1.txt
+-rw-r--r--   1 acadgild supergroup          0 2017-01-26 01:46 /test2
+-rw-r--r--   1 acadgild supergroup         32 2017-01-26 01:05 /testText.txt
+drwxrwxr-x   - acadgild supergroup          0 2015-11-05 13:46 /tmp
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 01:56 /user
+drwxr-xr-x   - acadgild supergroup          0 2015-11-05 12:56 /zookeeper
+[acadgild@localhost ~]$ hadoop fs -ls /user
+17/01/26 04:48:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 3 items
+drwxr-xr-x   - acadgild supergroup          0 2017-01-26 01:46 /user/acadgild
+drwxr-xr-x   - acadgild supergroup          0 2015-11-05 12:52 /user/hive
+drwxr-xr-x   - acadgild supergroup          0 2015-11-08 17:35 /user/prateek
+[acadgild@localhost ~]$ hadoop fs -ls /acadgild 
+17/01/26 04:49:03 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `/acadgild': No such file or directory
+[acadgild@localhost ~]$ hadoop fs -ls user/acadgild 
+17/01/26 04:49:23 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `user/acadgild': No such file or directory
+[acadgild@localhost ~]$ hadoop fs -ls /user/acadgild
+17/01/26 04:49:48 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 16 items
+drwxr-xr-x   - acadgild supergroup          0 2015-11-20 11:46 /user/acadgild/Pictures
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 21:58 /user/acadgild/World
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 19:01 /user/acadgild/data1
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:58 /user/acadgild/data2
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 /user/acadgild/here
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:35 /user/acadgild/hetal.txt
+-rw-r--r--   1 acadgild supergroup         63 2017-01-25 22:00 /user/acadgild/hetal1.txt
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:03 /user/acadgild/oozie-acad
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:00 /user/acadgild/share
+-rw-r--r--   1 acadgild supergroup         54 2017-01-26 01:42 /user/acadgild/test
+-rw-r--r--   1 acadgild supergroup         56 2017-01-26 01:46 /user/acadgild/test1
+-rw-r--r--   1 acadgild supergroup         17 2017-01-26 01:44 /user/acadgild/test1.txt
+-rw-r--r--   1 acadgild supergroup         35 2017-01-26 01:46 /user/acadgild/test2
+-rw-r--r--   1 acadgild supergroup         46 2017-01-26 01:02 /user/acadgild/testText.txt
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 19:06 /user/acadgild/you
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 /user/acadgild/zimpu.txt
+[acadgild@localhost ~]$ hadoop fs -mkdir /user/acadgild/hadoop
+17/01/26 04:50:53 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[acadgild@localhost ~]$ hadoop fs -ls /user/acadgild
+17/01/26 04:51:03 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 17 items
+drwxr-xr-x   - acadgild supergroup          0 2015-11-20 11:46 /user/acadgild/Pictures
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 21:58 /user/acadgild/World
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 19:01 /user/acadgild/data1
+drwxr-xr-x   - acadgild supergroup          0 2017-01-25 18:58 /user/acadgild/data2
+drwxr-xr-x   - acadgild supergroup          0 2017-01-26 04:50 /user/acadgild/hadoop
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 /user/acadgild/here
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:35 /user/acadgild/hetal.txt
+-rw-r--r--   1 acadgild supergroup         63 2017-01-25 22:00 /user/acadgild/hetal1.txt
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:03 /user/acadgild/oozie-acad
+drwxr-xr-x   - acadgild supergroup          0 2015-11-17 02:00 /user/acadgild/share
+-rw-r--r--   1 acadgild supergroup         54 2017-01-26 01:42 /user/acadgild/test
+-rw-r--r--   1 acadgild supergroup         56 2017-01-26 01:46 /user/acadgild/test1
+-rw-r--r--   1 acadgild supergroup         17 2017-01-26 01:44 /user/acadgild/test1.txt
+-rw-r--r--   1 acadgild supergroup         35 2017-01-26 01:46 /user/acadgild/test2
+-rw-r--r--   1 acadgild supergroup         46 2017-01-26 01:02 /user/acadgild/testText.txt
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 19:06 /user/acadgild/you
+-rw-r--r--   1 acadgild supergroup          0 2017-01-25 20:38 /user/acadgild/zimpu.txt
+[acadgild@localhost ~]$ hadoop fs -ls /user/acadgild/hadoop
+17/01/26 04:52:18 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[acadgild@localhost ~]$ hadoop fs -touchz /user/acadgild/hadoop/word-count
+17/01/26 04:53:55 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[acadgild@localhost ~]$ hadoop fs -appendToFile - /user/acadgild/hadoop/word-count
+17/01/26 04:54:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+This is a Test
+I am writing a file
+I am taking classes
+Thanks
+^C[acadgild@localhost ~]$ hadoop fs -cat /user/acadgild/hadoop/word-count
+17/01/26 04:55:19 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+This is a Test
+I am writing a file
+I am taking classes
+Thanks
+[acadgild@localhost ~]$ hadoop fs -appendToFile - /user/acadgild/hadoop/word-count
+17/01/26 04:55:38 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+This is more into file
+second test
+appending to the file
+thanks again
+^C[acadgild@localhost ~]$ hadoop fs -cat /user/acadgild/hadoop/word-count
+bash: hahadoop: command not found
+[acadgild@localhost ~]$ hadoop fs -cat /user/acadgild/hadoop/word-count
+17/01/26 04:57:06 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+This is a Test
+I am writing a file
+I am taking classes
+Thanks
+This is more into file
+second test
+appending to the file
+thanks again
+[acadgild@localhost ~]$ 
+
